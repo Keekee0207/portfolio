@@ -190,6 +190,72 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);over
   .ld-pen{animation:none!important}.ld-bar i{animation:none!important;width:100%!important}
   .belief-lined:hover,.belief-grid-card:hover,.belief-kraft:hover{transform:var(--rot,0deg)!important}
 }
+
+/* ═══ RESPONSIVE OPTIMIZATIONS ═══ */
+.cl{max-width:100%;word-break:break-word;overflow-wrap:anywhere}
+.cl iconify-icon{flex-shrink:0}
+.role-tags{display:flex;gap:.35rem;margin-top:.4rem;flex-wrap:wrap}
+.role-tag{font-size:.55rem;letter-spacing:.04em;padding:.12rem .45rem;background:rgba(200,67,46,.06);border:1px solid rgba(200,67,46,.14);border-radius:2px;color:var(--red);text-transform:uppercase;font-weight:600;display:inline-flex;align-items:center;line-height:1.2}
+
+@media(max-width:768px){
+  .nb{transform:none!important;margin:0 auto;box-shadow:0 4px 20px rgba(0,0,0,.15)}
+  .rib{display:none!important}
+  .desk{padding:1rem .5rem 3rem}
+  .ct{padding:2rem 1.25rem 1rem}
+  .col-art{width:100%!important;max-width:100%!important}
+}
+
+@media(max-width:640px){
+  .rail.r{display:none!important}
+  .rail.l{width:18px;padding:6px 0;gap:3px}
+  .st{width:12px;height:12px}
+  .st iconify-icon{font-size:6px}
+  .ct{padding:1.75rem .9rem 1rem 1.75rem!important}
+  
+  #hero{min-height:auto!important}
+  #hero-il{margin:1.25rem auto 0;text-align:center;display:flex;justify-content:center}
+  #hero-il svg{max-width:220px;width:100%;height:auto}
+  .hero-btns{display:flex;gap:.55rem;margin-top:1.4rem;flex-wrap:wrap}
+  @media(max-width:440px){
+    .hero-btns{flex-direction:column}
+    .hero-btns .btn{width:100%;justify-content:center;text-align:center}
+  }
+  .stat-row{display:flex;justify-content:space-between;gap:.8rem;width:100%;margin-top:1.6rem}
+
+  .belief-lined,.belief-grid-card,.belief-kraft{transform:none!important;margin:0 auto;width:100%}
+  .beliefs-grid{grid-template-columns:1fr;gap:1.2rem}
+
+  .pc.featured{position:relative}
+  .pc-badge{position:static;display:inline-block;margin-bottom:.5rem;width:fit-content}
+  .pc-t{padding-right:0!important}
+  .pc-grid{grid-template-columns:1fr;gap:.9rem}
+
+  .sk-grid{grid-template-columns:1fr;gap:.85rem}
+
+  .tl{padding-left:1.5rem}
+  .tl::before{left:4px}
+  .td{left:-1.5rem;width:10px;height:10px;top:.28rem}
+  .toast{transform:none!important;opacity:1!important;padding:.75rem .85rem}
+  .toast-t{font-size:.85rem}
+  .toast-d{font-size:.72rem}
+
+  .gi{flex:0 0 210px}
+  .gi img{height:150px}
+  .gal{scroll-padding:0 1rem;touch-action:pan-x pan-y}
+
+  .cl{font-size:.78rem;gap:.4rem}
+}
+
+@media(max-width:400px){
+  .ct{padding:1.5rem .75rem 1rem 1.6rem!important}
+  .sig{font-size:2.3rem}
+  .hl{font-size:1.25rem}
+  .sn{font-size:1.45rem}
+  .sl{font-size:.52rem}
+  .gi{flex:0 0 185px}
+  .gi img{height:135px}
+}
+
 </style>
 </head>
 <body>
@@ -254,7 +320,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);over
       <p class="body l" style="margin-top:1rem;max-width:380px">
         Hands-on experience building full-stack &amp; AI-powered applications across LLMs, RAG, Computer Vision, and modern web architectures. Vice President at WiSTEM RIT, Web3 Camp Chennai City Lead, 80+ events, and 5× National Hackathon Finalist.
       </p>
-      <div style="display:flex;gap:.55rem;margin-top:1.6rem;flex-wrap:wrap">
+      <div class="hero-btns" style="display:flex;gap:.55rem;margin-top:1.6rem;flex-wrap:wrap">
         <a href="#projects" class="btn btn-f"><span>View Projects</span></a>
         <a href="#contact" class="btn"><span>Get In Touch</span></a>
       </div>
